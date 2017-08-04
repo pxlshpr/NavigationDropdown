@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E2524D6B1F34233C004AE882 /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2524D6A1F34233C004AE882 /* Sugar.framework */; };
+		E2524D781F3429C1004AE882 /* Sugar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2524D6A1F34233C004AE882 /* Sugar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2AF04691F3404F300742F0B /* NavigationDropdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AF045F1F3404F200742F0B /* NavigationDropdown.framework */; };
 		E2AF046E1F3404F300742F0B /* NavigationDropdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AF046D1F3404F300742F0B /* NavigationDropdownTests.swift */; };
 		E2AF04701F3404F300742F0B /* NavigationDropdown.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AF04621F3404F200742F0B /* NavigationDropdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,19 @@
 			remoteInfo = NavigationDropdown;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2524D771F3429B2004AE882 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E2524D781F3429C1004AE882 /* Sugar.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E2524D6A1F34233C004AE882 /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
@@ -123,6 +137,7 @@
 				E2AF045B1F3404F200742F0B /* Frameworks */,
 				E2AF045C1F3404F200742F0B /* Headers */,
 				E2AF045D1F3404F200742F0B /* Resources */,
+				E2524D771F3429B2004AE882 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -341,7 +356,7 @@
 		E2AF04741F3404F300742F0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -367,7 +382,7 @@
 		E2AF04751F3404F300742F0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
